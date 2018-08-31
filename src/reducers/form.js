@@ -1,7 +1,7 @@
 import isEmpty from 'lodash/isEmpty'
 import {FETCH_FIELDS_STARTED, FETCH_FIELDS_SUCCESS, FIELD_VALUE_CHANGED} from '../actions/fields'
 
-// in case of special performance requirements we can move form values to separate object (map):
+// in case of special performance requirements we can create separate object (map) for form values:
 // {
 //      fieldName1: fieldValue1,
 //      fieldName2: fieldValue2
@@ -44,8 +44,9 @@ const form = (state = initialState, action) => {
             const {fieldName, fieldValue} = action.payload;
             return {
                 ...state,
-                fields: state.fields
-                    .map(field => (field.name === fieldName) ? {...field, value: fieldValue} : field)
+                fields: state.fields.map(
+                    field => (field.name === fieldName) ? {...field, value: fieldValue} : field
+                )
             };
         default:
             return state;

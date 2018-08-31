@@ -1,3 +1,5 @@
+// Fields object that passed to dynamic form
+// In real scenario instead of defining we should receive it from some rest endpoint
 const fields = [
     {
         type: 'text',
@@ -25,6 +27,7 @@ const fields = [
     }
 ];
 
+// Simulation of rest endpoint call with setTimeout
 const fetchFields = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
