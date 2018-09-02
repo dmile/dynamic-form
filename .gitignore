@@ -25,3 +25,6 @@ yarn-error.log*
 *.iws
 *.ipr
 .idea/
+
+# instead of .css use .scss files
+src/**/*.css
