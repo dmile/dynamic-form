@@ -26,5 +26,6 @@ yarn-error.log*
 *.ipr
 .idea/
 
-# instead of .css use .scss files
+# .css to .scss hack
 src/**/*.css
+/src/bootstrap/
