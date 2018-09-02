@@ -1,5 +1,5 @@
 // Set $icon-font-path from sass-loader issue #40, https://github.com/webpack-contrib/sass-loader/issues/40#issuecomment-70269553
-$icon-font-path: 'bootstrap/fonts/bootstrap/';
+$icon-font-path: '../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
-@import 'bootstrap/stylesheets/bootstrap';
-@import 'bootstrap/stylesheets/bootstrap/theme';
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/theme";
