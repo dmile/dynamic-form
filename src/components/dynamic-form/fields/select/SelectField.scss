@@ -1,0 +1,11 @@
+@import "../../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/grid";
+@import "../../DynamicForm.scss";
+
+.select-field-label {
+  @include make-xs-column($xs-label-columns);
+}
+
+.select-field-container {
+  @include make-xs-column($grid-columns - $xs-label-columns);
+}

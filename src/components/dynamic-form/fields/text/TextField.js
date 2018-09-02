@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
+import './TextField.css'
 
 const TextField = ({id, label, ...otherProps}) => (
     <div className="form-group">
-        <label htmlFor={id} className="col-sm-2 control-label">
+        <label htmlFor={id} className="text-field-label control-label">
             {label}
         </label>
-        <div className="col-sm-10">
+        <div className="text-field-container">
             <input {...otherProps} id={id} type="text" className="form-control"/>
         </div>
     </div>

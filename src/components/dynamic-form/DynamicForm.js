@@ -1,9 +1,9 @@
 import React from 'react';
 import {Button} from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import TextField from "./fields/TextField";
-import SelectField from "./fields/SelectField";
-import CheckboxField from "./fields/CheckboxField";
+import TextField from "./fields/text/TextField";
+import SelectField from "./fields/select/SelectField";
+import CheckboxField from "./fields/checkbox/CheckboxField";
 
 const renderField = ({type, ...otherProps}) => {
     switch (type) {
