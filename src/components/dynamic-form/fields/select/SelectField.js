@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
+import './SelectField.css';
+
 
 const renderSelectOption = (option) => (
     <option key={option.value} value={option.value}>
@@ -10,10 +12,10 @@ const renderSelectOption = (option) => (
 
 const SelectField = ({id, label, options, ...otherProps}) => (
     <div className="form-group">
-        <label htmlFor={id} className="col-sm-2 control-label">
+        <label htmlFor={id} className="select-field-label control-label">
             {label}
         </label>
-        <div className="col-sm-10">
+        <div className="select-field-container">
             <select {...otherProps} id={id} className="form-control">
                 {options.map(renderSelectOption)}
             </select>

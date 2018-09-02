@@ -1,0 +1,8 @@
+@import "../../../../bootstrap/assets/stylesheets/bootstrap/variables";
+@import "../../../../bootstrap/assets/stylesheets/bootstrap/mixins/grid";
+@import "../../DynamicForm.scss";
+
+.checkbox-field-container {
+  @include make-xs-column($grid-columns - $xs-label-columns);
+  @include make-xs-column-offset($xs-label-columns);
+}

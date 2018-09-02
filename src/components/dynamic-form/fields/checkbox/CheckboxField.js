@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
+import './CheckboxField.css'
+
 
 const CheckboxField = ({id, label, value, ...otherProps}) => (
     <div className="form-group">
-        <div className="col-sm-10 col-sm-offset-2">
+        <div className="checkbox-field-container">
             <div className="checkbox">
                 <label>
                     <input {...otherProps} id={id} checked={value} type="checkbox"/>
